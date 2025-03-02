@@ -1,5 +1,5 @@
 body {
-    font-family: 'Inter', sans-serif; /* Đổi thành Inter */
+    font-family: 'Inter', sans-serif;
     background: linear-gradient(135deg, #e6f0fa, #f7f9fc);
     margin: 0;
     padding: 20px;
@@ -24,6 +24,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    transform: translateX(-30px); /* Dời sang trái 50px */
 }
 
 .logo-bk {
@@ -38,7 +39,7 @@ header {
 
 .title-effect {
     color: #007BFF;
-    font-weight: 700; /* Dùng font-weight thay vì bold */
+    font-weight: 700;
     font-size: 28px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -55,7 +56,7 @@ header {
 
 h2 {
     color: #007BFF;
-    font-weight: 700; /* Dùng 700 thay vì bold */
+    font-weight: 700;
     border-bottom: 2px solid #cce5ff;
     padding-bottom: 8px;
     margin-bottom: 20px;
@@ -89,7 +90,7 @@ input[type="number"] {
     border-radius: 5px;
     margin-left: 15px;
     font-size: 14px;
-    font-family: 'Inter', sans-serif; /* Áp dụng Inter cho input */
+    font-family: 'Inter', sans-serif;
     transition: border-color 0.3s ease;
 }
 
@@ -117,7 +118,7 @@ th, td {
 th {
     background: #007BFF;
     color: white;
-    font-weight: 700; /* Dùng 700 thay vì bold */
+    font-weight: 700;
 }
 
 td {
@@ -134,8 +135,8 @@ button {
     display: block;
     margin: 30px auto;
     font-size: 16px;
-    font-family: 'Inter', sans-serif; /* Áp dụng Inter cho button */
-    font-weight: 700; /* Dùng 700 thay vì bold */
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
     transition: all 0.3s ease;
 }
 
@@ -158,7 +159,7 @@ p {
 }
 
 span {
-    font-weight: 700; /* Dùng 700 thay vì bold */
+    font-weight: 700;
     color: #007BFF;
 }
 
@@ -210,5 +211,8 @@ input[type="checkbox"] {
     }
     .title-effect {
         font-size: 20px;
+    }
+    .logo-container {
+        transform: translateX(-30px); /* Giảm dịch trái trên mobile để tránh tràn */
     }
 }
