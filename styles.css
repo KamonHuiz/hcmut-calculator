@@ -1,14 +1,14 @@
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif; /* Đổi thành Inter */
     background: linear-gradient(135deg, #e6f0fa, #f7f9fc);
     margin: 0;
-    padding: 10px;
+    padding: 20px;
 }
 
 .container {
-    max-width: 100%;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 15px;
+    padding: 30px;
     background: white;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 123, 255, 0.1);
@@ -16,15 +16,14 @@ body {
 
 header {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    transform: translateX(-50px);
+    gap: 20px;
 }
 
 .logo-bk {
@@ -39,10 +38,10 @@ header {
 
 .title-effect {
     color: #007BFF;
-    font-weight: 700;
-    font-size: 5vw;
+    font-weight: 700; /* Dùng font-weight thay vì bold */
+    font-size: 28px;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     background: linear-gradient(90deg, #007BFF, #00b4ff, #007BFF);
     -webkit-background-clip: text;
     color: transparent;
@@ -56,16 +55,15 @@ header {
 
 h2 {
     color: #007BFF;
-    font-weight: 700;
-    font-size: 4vw;
+    font-weight: 700; /* Dùng 700 thay vì bold */
     border-bottom: 2px solid #cce5ff;
     padding-bottom: 8px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 section {
-    margin: 20px 0;
-    padding: 15px;
+    margin: 30px 0;
+    padding: 20px;
     background: #f8fbff;
     border-radius: 10px;
     transition: transform 0.3s ease;
@@ -79,20 +77,19 @@ section:hover {
 label {
     display: flex;
     align-items: center;
-    margin: 10px 0;
+    margin: 15px 0;
     color: #333;
-    font-size: 3.5vw;
+    font-size: 16px;
 }
 
 input[type="number"] {
-    width: 20vw;
-    max-width: 90px;
-    padding: 6px;
+    width: 90px;
+    padding: 8px;
     border: 1px solid #b3d4fc;
     border-radius: 5px;
-    margin-left: 10px;
-    font-size: 3vw;
-    font-family: 'Inter', sans-serif;
+    margin-left: 15px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif; /* Áp dụng Inter cho input */
     transition: border-color 0.3s ease;
 }
 
@@ -105,52 +102,40 @@ input[type="number"]:focus {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 10px;
+    margin-top: 15px;
     background: white;
     border-radius: 8px;
-    overflow-x: auto; /* Thêm thanh cuộn ngang nếu bảng quá rộng */
-    display: block; /* Để overflow-x hoạt động */
+    overflow: hidden;
 }
 
 th, td {
-    padding: 8px;
+    padding: 12px;
     text-align: center;
     border: 1px solid #cce5ff;
-    font-size: 3vw;
-    min-width: 50px; /* Đảm bảo ô có chiều rộng tối thiểu */
 }
 
 th {
     background: #007BFF;
     color: white;
-    font-weight: 700;
+    font-weight: 700; /* Dùng 700 thay vì bold */
 }
 
 td {
     background: #f8fbff;
 }
 
-td input[type="number"] {
-    width: 100%; /* Ô input chiếm toàn bộ ô td */
-    max-width: 100%; /* Không vượt quá ô td */
-    padding: 4px; /* Giảm padding cho vừa ô */
-    margin: 0; /* Bỏ margin để fit vào ô */
-    font-size: 3vw;
-    box-sizing: border-box; /* Bao gồm padding trong width */
-}
-
 button {
     background: linear-gradient(45deg, #007BFF, #00b4ff);
     color: white;
-    padding: 10px 20px;
+    padding: 12px 30px;
     border: none;
     border-radius: 25px;
     cursor: pointer;
     display: block;
-    margin: 20px auto;
-    font-size: 3.5vw;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
+    margin: 30px auto;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif; /* Áp dụng Inter cho button */
+    font-weight: 700; /* Dùng 700 thay vì bold */
     transition: all 0.3s ease;
 }
 
@@ -161,19 +146,19 @@ button:hover {
 }
 
 p {
-    font-size: 3.5vw;
+    font-size: 18px;
     color: #333;
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 .note {
-    font-size: 2.5vw;
+    font-size: 14px;
     color: #666;
     font-style: italic;
 }
 
 span {
-    font-weight: 700;
+    font-weight: 700; /* Dùng 700 thay vì bold */
     color: #007BFF;
 }
 
@@ -196,7 +181,7 @@ span {
 
 footer {
     text-align: right;
-    font-size: 2.5vw;
+    font-size: 14px;
     color: #666;
     margin-top: 20px;
     font-style: italic;
@@ -205,67 +190,25 @@ footer {
 input[type="checkbox"] {
     margin-right: 10px;
     accent-color: #007BFF;
-    transform: scale(1.2);
 }
 
-/* Responsive cho mobile */
 @media (max-width: 600px) {
     .container {
-        padding: 10px;
-    }
-    .logo-bk {
-        width: 40vw;
-        max-width: 200px;
-    }
-    .logo-clb {
-        width: 20vw;
-        max-width: 100px;
-    }
-    .logo-container {
-        transform: translateX(-20px);
-        gap: 5px;
-    }
-    .title-effect {
-        font-size: 6vw;
-    }
-    h2 {
-        font-size: 5vw;
-    }
-    label {
-        flex-direction: column;
-        align-items: flex-start;
-        font-size: 4vw;
+        padding: 15px;
     }
     input[type="number"] {
-        width: 25vw;
-        margin-left: 0;
-        margin-top: 5px;
-        font-size: 4vw;
-    }
-    table {
-        font-size: 3.5vw;
-    }
-    th, td {
-        padding: 4px; /* Giảm padding thêm trên mobile */
-        font-size: 3.5vw;
-        min-width: 40px; /* Giảm chiều rộng tối thiểu */
-    }
-    td input[type="number"] {
-        width: 100%;
-        padding: 3px;
-        font-size: 3.5vw;
+        width: 70px;
     }
     button {
-        padding: 8px 15px;
-        font-size: 4vw;
+        padding: 10px 20px;
     }
-    p {
-        font-size: 4vw;
+    .logo-bk {
+        width: 220px;
     }
-    .note {
-        font-size: 3vw;
+    .logo-clb {
+        width: 100px;
     }
-    footer {
-        font-size: 3vw;
+    .title-effect {
+        font-size: 20px;
     }
 }
