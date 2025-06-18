@@ -54,8 +54,8 @@ function calculateScore() {
 
     // Xử lý điểm cộng
     let adjustedDiemCong = diemCong;
-    if (hbTotal >= 75) {
-        adjustedDiemCong = ((100 - hbTotal) / 25) * diemCong;
+    if (finalScore + diemCong > 100) {
+        adjustedDiemCong = 100 - finalScore;
     }
     finalScore += adjustedDiemCong;
 
